@@ -1,0 +1,11 @@
+Minho Lee:
+  name        : "Minho Lee"
+  bio         : "In progress"
+  avatar      : "../assets/images/profile_image.png"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "james.minho.lee@gmail.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/inundata"

@@ -1,0 +1,39 @@
+---
+title:  "About Max Depth"
+show_date: true
+comments: true
+layout: single
+categories:
+  - Oil price forecasting
+tags:
+  - Python
+  - XGBoost
+toc: true
+toc_sticky: true
+toc_label: "On this page"
+published: false
+---
+
+I've changed `max_depth` parameter, range from 3 to 13.
+
+To be brief, as same with [the penalization parameters](/oil%20price%20forecasting/about-penalization), the `max_depth` parameter were effective for `default XGBoost` but not for the `XGBoost with random forest`.<br>
+
+I attached the RMSE graph in each case below.<br>
+
+## 1. Max depth
+<br>
+**[`max_depth` ranges from 3 to 13]**
+
+**1. Default XGBoost**
+{% include oil_plotly/RMSE_of_BT_max_depth_change.html %}
+
+<br>
+**2. XGBoost with Random Forest**
+{% include oil_plotly/RMSE_of_BTRF_max_depth_change.html %}
+<br>
+The below plot is the mean of RMSE for the whole test period.
+<br>
+
+<span>
+![image](/assets/oil_result_images/rmse_max_depth.png){: .align-center}
+</span>
